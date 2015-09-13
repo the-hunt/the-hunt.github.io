@@ -13,6 +13,12 @@ body{
 	height: 100%;
 	width: 100%;
 }
+iframe{
+	width: 70%;
+	height: auto;
+	margin-left: 15%;
+	margin-right: 15%;
+}
 .wrapper{
 	padding: 20px;
 	height: auto;
