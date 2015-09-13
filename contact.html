@@ -3,7 +3,25 @@ layout: main
 ---
 
 <div class="full mobile-collapse">
-	<img src="/images/logo-scouting.png">
+
+		<?phpfunction initMap() {
+		  var myLatLng = {lat: -25.363, lng: 131.044};
+
+		  // Create a map object and specify the DOM element for display.
+		  var map = new google.maps.Map(document.getElementById('map'), {
+			center: myLatLng,
+			scrollwheel: false,
+			zoom: 4
+		  });
+
+		  // Create a marker and set its position.
+		  var marker = new google.maps.Marker({
+			map: map,
+			position: myLatLng,
+			title: 'Hello World!'
+		  });
+		}?>
+		
 	<h2>Contact</h2>
 	<p><b>Adres: Bergsebaan 27, Bergen op Zoom</b></p>
 	<p><b>Bij eventuele vragen kunt u ons altijd bereiken op ons email adres: thehunt2015@hotmail.com. Wij zullen proberen u zo snel mogenlijk te beantwoorden.</b></p>
