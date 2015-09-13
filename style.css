@@ -15,7 +15,7 @@ body{
 }
 iframe{
 	width: 70%;
-	height: auto;
+	height: inherit;
 	margin-left: 15%;
 	margin-right: 15%;
 }
